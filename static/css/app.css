@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+:root {
+  --llbackground: linear-gradient(90deg, #a5cd28, #69a507);
+  --background: linear-gradient(90deg, #eb008b,#a5008f);
+  --font: 'Nunito Sans', sans-serif;
+  --handFont: 'Great Vibes', cursive;
+  --black: #272626;
+  --darkgrey: #a9a8a8;
+  --white: #fff;
+  --whitish:#fff8f7;
+  --grey: #fefff0;
+  --lightgrey:#ebebeb;
+  --red: #F2421B;
+  --blue: #2A5CBF;
+  --lightblue: #A3D9D9;
+  --pink: #D93280;
+  --yellow: #F2C12E;
+  --maincolor:#f8fcb2;
+  --secondary:#eb008b;
+  --accent: #fdf5e5;
+  --warning: #d00808;
+  --Hpadding: 6vw;
+  --Vpadding: 8vw;
+  --padding: var(--Vpadding) var(--Hpadding);
+  --maxW: unset;
+  --btheight: 12vw;
+  --btradius: 5px;
+  --mbHeight: 93vh;
+  --bottomHeight: 7vh;
+  --headerHeight: 20vw;
+  --screenHeight: 93vh;
+  --beefShadow: inset -1vw -1vw 1.2vw -0.7vw var(--blue), inset 1vw 1vw 1.2vw -0.7vw var(--yellow);
+  --font8: 3vw;
+  --font9: 3.3vw;
+  --font10: 3.5vw;
+  --font11: 3.7vw;
+  --font12: 3.9vw;
+  --font13: 4.1vw;
+  --font14: 4.3vw;
+  --font15: 4.7vw;
+  --font16: 5.2vw;
+  --font18: 5.5vw;
+  --font20: 5.7vw;
+  --font22: 5.9vw;
+  --font25: 6.1vw;
+  --font28: 7vw;
+  --font30: 7.3vw;
+  --font32: 8vw;
+  --font35: 9vw;
+  --font38: 12vw;
+  --font40: 14vw;
+  --font42: 16vw;
+}
+
+ :root [data-theme="darkmode"]{
+  --white: #131313;
+  --whitish:#2c2c2c;
+  --red: #a71e00;
+  --black: #b0b0b0;
+  --darkgrey: #797979;
+  --lightgrey: #333333;
+}
+
+body [data-theme="darkmode"] {
+  background: var(--white);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: var(--font);
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  line-height: 125%;
+  text-align: inherit;
+  -webkit-tap-highlight-color: transparent;
+  width: 100%;
+  font-size: inherit;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+body {
+  /* scroll-snap-type: y mandatory; */
+  background: var(--black);
+}
+
+html {
+  text-align: left;
+  scroll-behavior: smooth;
+  color: var(--black);
+  scroll-snap-type: y mandatory;
+  /* scroll-padding-top: var(--headerHeight); */
+}
+
+html [data-theme="darkmode"] {
+  color: var(--black);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+button, input, select, textarea {
+  border: 0;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+[data-theme="darkmode"] img {
+  filter: brightness(0.8);
+}
+
+svg {
+  width: auto;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+main {
+  /* margin-top: var(--headerHeight); */
+  min-height: 100vh;
+  padding-bottom: var(--bottomHeight);
+  overflow: hidden;
+}
